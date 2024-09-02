@@ -23,9 +23,15 @@
 }
 .todolist{
     flex: 1;
+    background-color: rgb(104, 104, 104);
+    color:black;
+    border-color:black;
 }
 .completed{
     flex: 1;
+    background-color: rgb(167, 236, 127);
+    color: green;
+    border-color:green;
 }
 .inputs{
     flex: 2;
@@ -89,5 +95,7 @@ input:focus{
 .submit{
     width: 40%;
     height: 100%;
-  
+    background-color: rgb(77, 77, 214);
+    color: blue;
+    border-color:blue;
 }

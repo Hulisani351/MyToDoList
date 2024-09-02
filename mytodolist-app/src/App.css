@@ -25,7 +25,8 @@ main{
   background-color:  #17202a ;
 }
 h1{
-  top:-5px;
+  display:flex ;
+  margin-top: 10px;
   font-size: x-large;
   font-weight: 900;
   color:white;
