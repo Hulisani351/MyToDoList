@@ -7,7 +7,6 @@
 }
 .form{
     flex: 3;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,30 +48,36 @@
 
 }
 .input{
-    flex: 1;
+    flex: 3;
     height:100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 5px;
+    
 }
 input{
-    position: relative;
     border: none;
     background-color: transparent;
     border-bottom:0;
-    transition: 3s;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
    
 }
 input::placeholder{
     color: white;
     font-style: italic;
-    font-size: large;
+    font-size:medium;
 }
 input:hover{
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
 }
+input:focus{
+    border: none;
+    outline: none;
+}
+
 .button{
     width: 100%;
     flex: 1;
