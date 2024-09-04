@@ -34,22 +34,26 @@ function App() {
   };
   const moveUp = (index) => {
     if (index > 0) {
-      // Swap elements
+      // Swap elements in tasks
       const newTasks = [...tasks];
       const tempTask = newTasks[index];
-      const tempDescription = descriptions[index];
-      
       newTasks[index] = newTasks[index - 1];
-      setTasks(newTasks);
+      newTasks[index - 1] = tempTask;
       
+      // Update tasks state
+      setTasks(newTasks);
+  
+      // Swap elements in descriptions
       setDescriptions(prevDescriptions => {
         const newDescriptions = [...prevDescriptions];
+        const tempDescription = newDescriptions[index];
         newDescriptions[index] = newDescriptions[index - 1];
         newDescriptions[index - 1] = tempDescription;
         return newDescriptions;
       });
     }
   };
+  
   const moveDown = (index) => {
     if (index < tasks.length - 1) {
       // Swap elements
@@ -58,6 +62,7 @@ function App() {
       const tempDescription = descriptions[index];
       
       newTasks[index] = newTasks[index + 1];
+      newTasks[index + 1]=tempTask;
       setTasks(newTasks);
       
       setDescriptions(prevDescriptions => {
@@ -82,6 +87,7 @@ function App() {
     <>
       <main>
         <h1>Welcome Back</h1>
+        <p className='Name'>Nkosinathi</p>
         <section className='upper_part'>
           <AddTask onAddTask={handleAddTask} handleToDisplay={handleDisplayChange} />
         </section>
