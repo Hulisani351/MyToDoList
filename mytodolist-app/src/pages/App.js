@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import AddTask from './components/AddTask';
-import DisplayTasks from './components/DisplayTasks';
+import AddTask from '../components/AddTask';
+import DisplayTasks from '../components/DisplayTasks';
 import './App.css';
 
 function App() {
