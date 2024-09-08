@@ -1,0 +1,118 @@
+/* Container for the header */
+.header {
+    margin-bottom: 20px;
+  }
+  
+  /* Header styling */
+  .header h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Main display container */
+  .display {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Task list styling */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Task section */
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .title h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .description p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* Completed time section */
+  .completed-time {
+    font-style: italic;
+    color: #888;
+  }
+  
+  /* Functional buttons section */
+  .functionalties {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Specific button colors */
+  .btn1 {
+    background-color: #17a2b8;
+  }
+  
+  .btn1:hover {
+    background-color: #117a8b;
+  }
+  
+  .btn2 {
+    background-color: #ffc107;
+  }
+  
+  .btn2:hover {
+    background-color: #e0a800;
+  }
+  
+  .btn3 {
+    background-color: #28a745;
+  }
+  
+  .btn3:hover {
+    background-color: #218838;
+  }
+  
+  .btn4 {
+    background-color: #dc3545;
+  }
+  
+  .btn4:hover {
+    background-color: #c82333;
+  }
+  
+  /* Disabled button state */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

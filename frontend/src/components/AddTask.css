@@ -1,0 +1,101 @@
+/* Container for the AddTask component */
+.AddTaskWrapper {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Section for inputs */
+  .inputs {
+    margin-bottom: 20px;
+  }
+  
+  /* Labels styling */
+  .Labes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .Labes label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields styling */
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputTitle,
+  .inputDescription {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .inputTitle::placeholder,
+  .inputDescription::placeholder {
+    color: #aaa;
+  }
+  
+  /* Submit button styling */
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Buttons for view switching */
+  .viewTable {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todolist,
+  .completed {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todolist:hover,
+  .completed:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Active button styling (if needed) */
+  .viewTable .active {
+    background-color: #0056b3;
+  }
+  

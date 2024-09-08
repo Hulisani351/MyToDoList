@@ -1,0 +1,130 @@
+/* Reset some default styles for better cross-browser consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+main {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* User name styling */
+.Name {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Section styling for upper and lower parts */
+.upper_part,
+.lower_part {
+  margin-bottom: 20px;
+}
+
+/* AddTask component styling */
+.upper_part {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Lower part section with tasks */
+.lower_part {
+  padding: 20px;
+}
+
+/* Styling for task items */
+.task-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.task-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons for move up/down, complete, and delete */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.task-actions button:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.complete-btn {
+  background-color: #28a745;
+}
+
+.complete-btn:hover {
+  background-color: #218838;
+}
+
+/* Display switch buttons */
+.display-switch {
+  margin-bottom: 20px;
+}
+
+.display-switch button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.display-switch button.active {
+  background-color: #0056b3;
+}
+
+.display-switch button:hover {
+  background-color: #0056b3;
+}
