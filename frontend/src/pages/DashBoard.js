@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import AddTask from '../components/AddTask';
 import DisplayTasks from '../components/DisplayTasks';
 import './DashBoard.css';
+import { useUser } from '../context/UserContext';
+
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -10,6 +12,7 @@ function App() {
   const [completedDescriptions, setCompletedDescriptions] = useState([]);
   const [completionTimes, setCompletionTimes] = useState([]);
   const [display, setDisplay] = useState('list');
+  const { user } = useUser();
 
   const handleAddTask = (title, description) => {
     setTasks(prevTasks => [...prevTasks, title]);
@@ -87,7 +90,7 @@ function App() {
     <>
       <main>
         <h1>Welcome Back</h1>
-        <p className='Name'>Nkosinathi</p>
+        <p className='Name'> {user?.name || 'Guest'}</p>
         <section className='upper_part'>
           <AddTask onAddTask={handleAddTask} handleToDisplay={handleDisplayChange} />
         </section>

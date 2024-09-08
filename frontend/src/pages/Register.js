@@ -15,14 +15,17 @@ function Register() {
         e.preventDefault();
         try {
             const res = await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
-            setResponse(res.data.message); // Assuming your API returns a message
+            setResponse(res.data.message);
             setError('');
             console.log(res);
-
-            // Redirect to login page
-            navigate('/Login'); // Use history to redirect to the login page
+    
+       
+            localStorage.setItem('user', JSON.stringify({ name, email }));
+    
+ 
+            navigate('/Login');
         } catch (error) {
-            setError(error.response?.data?.message || error.message); // Extract error message from the response
+            setError(error.response?.data?.message || error.message);
             setResponse('');
             console.log(error);
         }
