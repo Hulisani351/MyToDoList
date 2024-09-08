@@ -13,7 +13,8 @@ function Login({ setToken }) {
     const onSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+            // Make sure this URL matches the backend route
+            const res = await axios.post('http://localhost:5000/login', { email, password });
             setToken(res.data.token); 
             setResponse('Login successful!'); 
             setError(''); 
@@ -58,7 +59,7 @@ function Login({ setToken }) {
                             {response && <p className='response-message'>{response}</p>}
                             {error && <p className='error-message'>{error}</p>}
                             <hr />
-                            <p>Don't have an account? <Link to='/Register'>Register</Link></p>
+                            <p>Don't have an account? <Link to='/'>Register</Link></p>
                         </section>
                     </form>
                 </article>
