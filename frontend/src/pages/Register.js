@@ -14,7 +14,7 @@ function Register() {
     const onSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
+            const res = await axios.post('http://localhost:5000/register', { name, email, password });
             setResponse(res.data.message);
             setError('');
             console.log(res);
@@ -23,7 +23,7 @@ function Register() {
             localStorage.setItem('user', JSON.stringify({ name, email }));
     
  
-            navigate('/Login');
+            navigate('/login');
         } catch (error) {
             setError(error.response?.data?.message || error.message);
             setResponse('');
